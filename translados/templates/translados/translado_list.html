@@ -1,0 +1,13 @@
+Listagem de translados
+
+<br>
+
+<p>{{ message }}</p>
+{% for translados.local in object_list %}
+
+    <a href="{% url 'detalhar_translado' translados.pk %}">{{ translados.local }}</a><br>
+
+{% endfor %}
+
+<a href="{% url 'criar_translado' %}">Novo</a>
+

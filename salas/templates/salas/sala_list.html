@@ -1,0 +1,13 @@
+Listagem de Salas
+
+<br>
+
+<p>{{ message }}</p>
+{% for salas in object_list %}
+
+    <a href="{% url 'detalhar_sala' salas.pk %}">{{ salas }}</a><br>
+
+{% endfor %}
+
+<a href="{% url 'criar_sala' %}">Novo</a>
+

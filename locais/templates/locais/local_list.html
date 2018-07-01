@@ -1,0 +1,14 @@
+Listagem de Usuarios
+
+<br>
+
+<p>{{ message }}</p>
+{% for locais in object_list %}
+
+    <a href="{% url 'detalhar_local' locais.pk %}">{{ locais }}</a><br>
+
+{% endfor %}
+
+<a href="{% url 'criar_local' %}">Novo</a>
+
+
