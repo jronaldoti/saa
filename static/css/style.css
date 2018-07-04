@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.tabela {
+    table-layout: fixed;
+    margin-top: 25px;
+    overflow-y: auto;
+    height: 420px;
+}
+
+.tabela a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tabela a span {
+    font-size: 0.8rem;
+}
+
+.infos {
+    margin: 3rem;
+}
+
+.infos p {
+    font-size: 1.1rem;
+}
+
+.infos p span {
+    font-weight: bold;
+}
+
+.infos a {
+    margin-top: 10rem;
+}
+
+.infos a span {
+    font-size: 0.8rem;
+}
+
+.excluir {
+    margin: 3rem;
+}
+
+.excluir p {
+    font-size: 1.1rem;
+}
+
+.excluir a {
+    margin-top: 1rem;
+}
+
+.excluir a span {
+    font-size: 0.8rem;
+}
+
+.saa {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.container {
+    margin: 3rem;
+}
+
+.btn-cadastrar {
+    font-size: 0.8rem;
+}
+
+.modulos {
+    width: 150px;
+    height: 130px;
+    border: 2px solid #212121;
+}
+
+.modulos a {
+    font-size: 1rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.modulos span {
+    margin: 2rem;
+}
+
+.greyDarkIcon {
+    color: #212121;
+}
+
+.card-panel {
+    min-height: 470px;
+}
+
+.adm {
+    border-top: 2px solid #212121;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.adm-principal {
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+.adm a, .adm-principal a {
+    color: #212121;
+}
+
+.page-footer .footer-copyright {
+    height: 20px;
+}
+
+.input-field label {
+    color: #212121;
+}

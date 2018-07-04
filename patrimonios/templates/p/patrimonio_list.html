@@ -1,0 +1,13 @@
+Listagem de Usuarios
+
+<br>
+
+<p>{{ message }}</p>
+{% for patrimonios in object_list %}
+
+    <a href="{% url 'detalhar_patrimonio' patrimonios.pk %}">{{ patrimonios }}</a><br>
+
+{% endfor %}
+
+<a href="{% url 'criar_patrimonio' %}">Novo</a>
+

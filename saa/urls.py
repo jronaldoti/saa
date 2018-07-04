@@ -5,6 +5,7 @@ from locais import urls as locais_urls
 from patrimonios import urls as patrimonios_urls
 from salas import urls as salas_urls
 from translados import urls as translados_urls
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('usuarios/', include(usuarios_urls)),
@@ -12,5 +13,4 @@ urlpatterns = [
     path('patrimonios/',include(patrimonios_urls)),
     path('salas/',include(salas_urls)),
     path('translados/',include(translados_urls)),
-
 ]

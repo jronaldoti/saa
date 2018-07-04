@@ -1,13 +1,30 @@
-Listagem de Usuarios
+{% extends 'base.html' %}
 
-<br>
+{% block title %}Patrimônios{% endblock %}
 
-<p>{{ message }}</p>
-{% for patrimonios in object_list %}
-
-    <a href="{% url 'detalhar_patrimonio' patrimonios.pk %}">{{ patrimonios }}</a><br>
-
-{% endfor %}
-
-<a href="{% url 'criar_patrimonio' %}">Novo</a>
-
+{% block main %}
+    <div class="col s12 m8 tabela">
+        <table class="highlight responsive-table">
+            <thead>
+                <tr>
+                    <th>Tombo</th>
+                    <th>Nome</th>
+                    <th>Visualizar</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                {% for patrimonios in object_list %}
+                <tr>
+                    <td>{{patrimonios.tombo}}</td>
+                    <td>{{patrimonios.nome}}</td>
+                    <td><a href="{% url 'detalhar_patrimonio' patrimonios.pk %}" class="waves-effect waves-light btn grey darken-4"><span>Visualizar</span></a></td>
+                </tr>
+                {% endfor %}                              
+            </tbody>
+        </table>
+    </div>
+    <div class="col s12 m3 offset-m9">
+        <a href="{% url 'criar_patrimonio' %}" class="waves-effect waves-light btn grey darken-4"><span class="btn-cadastrar">Cadastrar</span></a>
+    </div>    
+{% endblock main %}

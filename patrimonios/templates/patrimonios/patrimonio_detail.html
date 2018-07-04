@@ -1,5 +1,13 @@
-<h1>Patrimonio detalhes</h1>
+{% extends 'base.html' %}
 
-Tombo: {{ object.tombo }}<br>
-Nome: {{ object.nome }} <br>
-Especificacao: {{ object.especificacao }}<br>
+{% block title %}Patrimônios{% endblock %}
+
+{% block main %}
+    <div class="col s12 m8 infos">
+        <p><span>Tombo:</span> {{ object.tombo }}</p>
+        <p><span>Nome:</span> {{ object.nome }}</p>
+        <p><span>Especificação:</span> {{ object.especificacao }}</p>
+        <a href="{% url 'atualizar_patrimonio' object.id %}" class="waves-effect waves-light btn grey darken-4"><span>Editar</span></a>
+        <a href="{% url 'deletar_patrimonio' object.id %}" class="waves-effect waves-light btn red darken-4"><span>Excluir</span></a>
+    </div>
+{% endblock main %}

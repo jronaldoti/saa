@@ -1,9 +1,9 @@
 {
-    "python.pythonPath": "/home/jronaldo/MyVenv/bin/python3",
+    "python.pythonPath": "${workspaceFolder}/vsaa/bin/python",
     "team.showWelcomeMessage": false,
     "editor.formatOnSave": true,
-    "python.linting.pep8Enabled": true,
-    "python.linting.pylintPath": "/home/jronaldo/MyVenv/bin/pylint",
+    "python.linting.pep8Enabled": false,
+    "python.linting.pylintPath": "${workspaceFolder}/vsaa/bin/pylint",
     "python.linting.pylintArgs": [
         "--load-plugins",
         "pylint_django"
@@ -11,4 +11,5 @@
     "python.linting.pylintEnabled": true,
 
     "html.format.enable": true,
+    "python.linting.enabled": true,
 }

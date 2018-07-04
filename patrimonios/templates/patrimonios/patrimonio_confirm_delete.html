@@ -1,5 +1,13 @@
-<form action="" method="post">
-    {% csrf_token %}
-    <p>Are you sure you want to delete "{{ object }}"?</p>
-    <input type="submit" value="Confirm" />
-</form>
+{% extends 'base.html' %}
+
+{% block title %}Patrimônios{% endblock %}
+
+{% block main %}
+    <div class="col s12 m8 excluir">
+        <form action="" method="post">
+            {% csrf_token %}
+            <p>Deseja realmente excluir o patrimônio {{patrimonio.nome}}?</p>
+            <input type="submit" value="Excluir" />
+        </form>
+    </div>
+{% endblock main %}
